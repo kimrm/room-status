@@ -55,7 +55,9 @@ export const LocationPage = () => {
   return (
     <div id="content" className="bg-black text-white h-screen p-10">
       <div className="flex justify-between mb-5">
-        <h1 className="text-4xl font-extrabold">Romoversikt Studiesenteret</h1>
+        <h1 className="text-4xl font-extrabold">
+          {import.meta.env.VITE_VENUE_NAME} {locationData?.name}
+        </h1>
         <Clock className="text-4xl bg-slate-50 text-slate-950 rounded p-4" />
       </div>
       <div>
