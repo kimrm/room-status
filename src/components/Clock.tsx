@@ -14,8 +14,8 @@ export default function Clock(props: props) {
       {time.toLocaleTimeString(undefined, {
         hour: "numeric",
         minute: "numeric",
-        hour12: false, // or false, depending on your preference for 12-hour or 24-hour format
-        second: undefined, // This will exclude seconds from the time
+        hour12: false,
+        second: undefined
       })}
     </div>
   );
