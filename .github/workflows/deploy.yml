@@ -28,7 +28,7 @@ jobs:
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.DO_IP }}
-          username: root
+          username: forge
           key: ${{ secrets.DO_SSH_KEY }}
           port: 22
           source: "dist/*"
