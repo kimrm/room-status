@@ -1,6 +1,6 @@
 # Room-status app
 
-Backend: https://github.com/kimrm/room-status
+Backend: https://github.com/kimrm/room-status-api
 
 ## About
 
