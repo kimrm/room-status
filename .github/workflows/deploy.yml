@@ -24,6 +24,7 @@ jobs:
       - name: Build project
         env:
           VITE_BACKEND_BASE_URL: ${{ secrets.VITE_BACKEND_BASE_URL }}
+          VITE_VENUE_NAME: ${{ secrets.VITE_VENUE_NAME }}
         run: npm run build
 
       - name: Deploy to DigitalOcean
