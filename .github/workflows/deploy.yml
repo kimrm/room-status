@@ -24,7 +24,7 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Deply to DigitalOcean
+      - name: Deploy to DigitalOcean
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.DO_IP }}
