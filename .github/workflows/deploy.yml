@@ -32,4 +32,4 @@ jobs:
           key: ${{ secrets.DO_SSH_KEY }}
           port: 22
           source: "dist/*"
-          target: "/home/forge/ssmt-room-status.kodesmia.com/public"
+          target: "/home/forge/ssmt-room-status.kodesmia.com"
