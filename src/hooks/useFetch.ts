@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 
 const fetchUrl = async (url: string) => {
-  console.log("Fetching");
+  console.log("Fetching from " + url);
   const response = await fetch(url);
   if (!response.ok) {
     throw new Error(`HTTP error! status: ${response.status}`);
@@ -10,9 +10,9 @@ const fetchUrl = async (url: string) => {
   return json;
 };
 
-export const useFetch = <T,>(url: string, interval = 0): T | null => {
+export const useFetch = <T>(url: string, interval = 0): T | null => {
   const [data, setData] = useState<T | null>(null);
-  const dataRef = useRef<T | null>(null); 
+  const dataRef = useRef<T | null>(null);
 
   useEffect(() => {
     let ignore = false;

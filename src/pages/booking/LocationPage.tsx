@@ -12,7 +12,9 @@ export const LocationPage = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [bookingsPerPage, setBookingsPerPage] = useState(0);
   const [visibleBookings, setVisibleBookings] = useState<IBooking[]>([]);
-  const apiPath = `http://localhost:3000/api/v1/bookings/${location}`;
+  const apiPath = `${
+    import.meta.env.VITE_BACKEND_BASE_URL
+  }/api/v1/bookings/${location}`;
   const locationData = useFetch<ILocation>(apiPath, 30000);
 
   useEffect(() => {
