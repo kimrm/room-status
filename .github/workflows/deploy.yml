@@ -35,4 +35,4 @@ jobs:
           key: ${{ secrets.DO_SSH_KEY }}
           port: 22
           source: "dist/*"
-          target: ${{ DO_TARGET }}
+          target: ${{ secrets.DO_TARGET }}
