@@ -31,8 +31,8 @@ jobs:
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.DO_IP }}
-          username: forge
+          username: ${{ secrets.DO_USER }}
           key: ${{ secrets.DO_SSH_KEY }}
           port: 22
           source: "dist/*"
-          target: "/home/forge/ssmt-room-status.kodesmia.com"
+          target: ${{ DO_TARGET }}
